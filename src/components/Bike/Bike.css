@@ -1,0 +1,26 @@
+.bike {
+    width: 280px;
+    border: 1px solid #606c76;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bike-image {
+    margin-bottom: 20px;
+}
+
+.bike-name {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+
+.bike-description {
+    font-size: 1.4rem;
+}
+
+.bike-classification li {
+    display: inline;
+    font-size: 1.4rem;
+    padding-right: 10px;
+}
