@@ -4,3 +4,9 @@
     flex-wrap: wrap;
     list-style-type: none;
 }
+
+.reset-link {
+    color: #004444;
+    cursor: pointer;
+    text-decoration: underline;
+}

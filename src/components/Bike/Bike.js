@@ -8,7 +8,7 @@ const Bike = (props) => (
     <p className='bike-description'>{ props.description }</p>
     <ul className="bike-class">
       { props.class.map((item, index) =>
-        <li key={index}>{item}</li>
+        <li className='bike-sort-link' onClick={() => props.setSortBy(item)} key={index}>{item}</li>
       ) }
     </ul>
   </li>
@@ -22,6 +22,7 @@ Bike.propTypes = {
   description: string.isRequired,
   image: objectOf(string).isRequired,
   class: arrayOf(string).isRequired,
+  setSortBy: PropTypes.func.isRequired,
 }
 
 export default Bike
