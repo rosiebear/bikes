@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/rosiebear/bikes.svg?branch=master)](https://travis-ci.org/rosiebear/bikes)
 
+[Demo](https://bookfit-bfef4.firebaseapp.com/)
+
 ## Assumptions
 
  - _Sort by class into a custom order_ sort bikes by selected class means that bikes with the selected class come before the other bikes.
