@@ -1,4 +1,4 @@
-const mockBikes = {
+export const mockBikes = {
   "items": [
     {
       "id": 1,
@@ -72,5 +72,3 @@ const mockBikes = {
     }
   ]
 }
-
-export default mockBikes;

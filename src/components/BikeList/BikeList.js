@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import Bike from '../Bike/Bike'
-import './Bikes.css';
+import './BikeList.css';
 
-const Bikes = ({ bikes }) => (
+const BikeList = ({ bikes }) => (
   <ul className="bike-list">
     { bikes.map(bike =>
       <Bike {...bike} key={bike.id} />
@@ -12,7 +12,7 @@ const Bikes = ({ bikes }) => (
 
 const { string, number, arrayOf, objectOf, shape } = PropTypes
 
-Bikes.propTypes = {
+BikeList.propTypes = {
   bikes: arrayOf(shape({
     id: number.isRequired,
     name: string.isRequired,
@@ -22,4 +22,4 @@ Bikes.propTypes = {
   }).isRequired).isRequired,
 }
 
-export default Bikes
+export default BikeList

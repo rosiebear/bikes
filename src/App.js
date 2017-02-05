@@ -1,15 +1,14 @@
 import React from 'react';
-import Bikes from './components/Bikes/Bikes'
+import BikeListContainer from './containers/BikeListContainer/BikeListContainer'
 import './App.css';
-import bikes from './mocks/bikes'
 
 const App = () => (
   <div>
     <div className="header">
-      <h1>Bikes</h1>
+      <h1>{'Bikes'}</h1>
     </div>
     <div className="container">
-      <Bikes bikes={bikes.items}/>
+      <BikeListContainer />
     </div>
   </div>
 )

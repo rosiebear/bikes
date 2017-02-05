@@ -1,8 +1,8 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
+import { shallow } from 'enzyme';
 import Bike from './Bike';
-import bikes from '../../mocks/bikes'
-const testBike = bikes.items[0]
+import { mockBikes } from '../../mocks/mockBikes'
+const testBike = mockBikes.items[0]
 
 describe('<Bike />', () => {
   let wrapper;
@@ -17,19 +17,19 @@ describe('<Bike />', () => {
 
   it('renders the bike\'s image', () => {
     expect(wrapper.find('.bike-image').length).toBe(1)
-  });
+  })
 
   it('renders the bike\'s name', () => {
     expect(wrapper.find('.bike-name').text()).toBe(testBike.name)
     expect(wrapper.find('.bike-name').length).toBe(1);
-  });
+  })
 
   it('renders the bike\'s description', () => {
     expect(wrapper.find('.bike-description').text()).toBe(testBike.description)
-    expect(wrapper.find('.bike-description').length).toBe(1);
-  });
+    expect(wrapper.find('.bike-description').length).toBe(1)
+  })
 
   it('renders the bike\'s class', () => {
     expect(wrapper.find('.bike-class').text()).toBe(testBike.class.join(''))
-  });
+  })
 })
